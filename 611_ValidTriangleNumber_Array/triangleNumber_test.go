@@ -3,7 +3,7 @@ package triangleNumber
 import "testing"
 
 func TestTriangleNumber(t *testing.T) {
-	coins := []int{5, 10, 30, 50, 100}
+	coins := []int{1,2,3,4}
 
 	result := triangleNumber(coins)
 

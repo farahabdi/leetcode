@@ -13,7 +13,6 @@ func numDecodings(s string) int {
 		return 0
 	}
 
-	upperLimit := 26
 
 	if n == 0 {
 		return 1
@@ -25,12 +24,9 @@ func numDecodings(s string) int {
 		head := s[0:headSize]
 		tail := s[headSize:]
 
-		result, err := strconv.Atoi(head)
+		result, _ := strconv.Atoi(head)
 
-		if err != nil {
-
-		}
-		if result > upperLimit {
+		if result > 26 {
 			break
 		}
 
